@@ -19,6 +19,7 @@
 
 @implementation BTLViewController
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -65,14 +66,14 @@
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"summit" ofType:@"jpg"];
     NSURL *fileNameAndPath = [NSURL fileURLWithPath:filePath];
     CIImage *beginImage = [CIImage imageWithContentsOfURL:fileNameAndPath];
-    
-    
-    CIFilter *filter = [CIFilter filterWithName:@"CICrystallize"];
-    //CIAttributeTypeDistance *radius =
-    [filter setValue:beginImage forKey:kCIInputImageKey];
-    //[filter set]
+    CIFilter *filter = [CIFilter filterWithName:@"CISepiaTone"
+                                           keysAndValues:kCIInputImageKey, beginImage, @"inputIntensity",
+                                 [NSNumber numberWithFloat:0.6], nil];
     CIImage *outputImage = [filter outputImage];
+    NSLog(@"filter applied");
     UIImage *newImage = [UIImage imageWithCIImage:outputImage];
+    NSLog(@"%@", newImage);
+    NSLog(@"imageView setting");
     self.imageView.image = newImage;
 }
 
@@ -85,13 +86,18 @@
     CIImage *beginImage = [CIImage imageWithContentsOfURL:fileNameAndPath];
     
     
-    CIFilter *filter = [CIFilter filterWithName:@"CIDepthOfField"];
-    [filter setValue:beginImage forKey:kCIInputImageKey];
+    //CIFilter *filter = [CIFilter filterWithName:@"CIGloom"];
+    //[filter setValue:beginImage forKey:kCIInputImageKey];
+    
+    CIFilter *filter = [CIFilter filterWithName:@"CIGloom"
+                                  keysAndValues:kCIInputImageKey, beginImage, @"inputIntensity",
+                        [NSNumber numberWithFloat:0.6], @"inputRadius", [NSNumber numberWithInt:20], nil];
+    
+    
     CIImage *outputImage = [filter outputImage];
     
     UIImage *newImage = [UIImage imageWithCIImage:outputImage];
     self.imageView.image = newImage;
-
 }
 
 
@@ -127,6 +133,8 @@
         [mailComposeViewController setSubject:@"Test email."];
         [mailComposeViewController setToRecipients:@[@"foobar@me.com"]];
         [mailComposeViewController setMessageBody:@"Check this out!" isHTML:NO];
+        NSData* data = UIImagePNGRepresentation(self.imageView.image);
+        [mailComposeViewController addAttachmentData:data mimeType:@"image/png" fileName:[NSString stringWithFormat:@"myImage.png"]];
         
         [self presentViewController:mailComposeViewController animated:YES completion:nil];
     }
