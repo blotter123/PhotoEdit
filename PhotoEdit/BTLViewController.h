@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 
-@interface BTLViewController : UIViewController
+@interface BTLViewController : UIViewController <MFMessageComposeViewControllerDelegate,MFMailComposeViewControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

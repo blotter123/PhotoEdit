@@ -23,6 +23,11 @@
 		AC56CD941735E9AE0054DF06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC56CD6F1735E9AE0054DF06 /* Foundation.framework */; };
 		AC56CD9C1735E9AE0054DF06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC56CD9A1735E9AE0054DF06 /* InfoPlist.strings */; };
 		AC56CD9F1735E9AE0054DF06 /* PhotoEditTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC56CD9E1735E9AE0054DF06 /* PhotoEditTests.m */; };
+		AC56CDA91735F1E00054DF06 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC56CDA81735F1E00054DF06 /* CoreImage.framework */; };
+		AC56CDAB1735F1E80054DF06 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC56CDAA1735F1E80054DF06 /* MessageUI.framework */; };
+		AC56CDAD1735F1FF0054DF06 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC56CDAC1735F1FF0054DF06 /* Social.framework */; };
+		AC56CDAF1735F3E20054DF06 /* summit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC56CDAE1735F3E20054DF06 /* summit.jpg */; };
+		AC56CDB11735FE690054DF06 /* twitter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC56CDB01735FE690054DF06 /* twitter.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,11 @@
 		AC56CD9B1735E9AE0054DF06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AC56CD9D1735E9AE0054DF06 /* PhotoEditTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoEditTests.h; sourceTree = "<group>"; };
 		AC56CD9E1735E9AE0054DF06 /* PhotoEditTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoEditTests.m; sourceTree = "<group>"; };
+		AC56CDA81735F1E00054DF06 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		AC56CDAA1735F1E80054DF06 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		AC56CDAC1735F1FF0054DF06 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		AC56CDAE1735F3E20054DF06 /* summit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = summit.jpg; path = ../../Desktop/summit.jpg; sourceTree = "<group>"; };
+		AC56CDB01735FE690054DF06 /* twitter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = twitter.jpg; path = ../../Desktop/twitter.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +75,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC56CDAD1735F1FF0054DF06 /* Social.framework in Frameworks */,
+				AC56CD721735E9AE0054DF06 /* CoreGraphics.framework in Frameworks */,
+				AC56CDAB1735F1E80054DF06 /* MessageUI.framework in Frameworks */,
+				AC56CDA91735F1E00054DF06 /* CoreImage.framework in Frameworks */,
 				AC56CD6E1735E9AE0054DF06 /* UIKit.framework in Frameworks */,
 				AC56CD701735E9AE0054DF06 /* Foundation.framework in Frameworks */,
-				AC56CD721735E9AE0054DF06 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +100,9 @@
 		AC56CD611735E9AE0054DF06 = {
 			isa = PBXGroup;
 			children = (
+				AC56CDAC1735F1FF0054DF06 /* Social.framework */,
+				AC56CDAA1735F1E80054DF06 /* MessageUI.framework */,
+				AC56CDA81735F1E00054DF06 /* CoreImage.framework */,
 				AC56CD731735E9AE0054DF06 /* PhotoEdit */,
 				AC56CD971735E9AE0054DF06 /* PhotoEditTests */,
 				AC56CD6C1735E9AE0054DF06 /* Frameworks */,
@@ -130,6 +146,8 @@
 		AC56CD741735E9AE0054DF06 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AC56CDB01735FE690054DF06 /* twitter.jpg */,
+				AC56CDAE1735F3E20054DF06 /* summit.jpg */,
 				AC56CD751735E9AE0054DF06 /* PhotoEdit-Info.plist */,
 				AC56CD761735E9AE0054DF06 /* InfoPlist.strings */,
 				AC56CD791735E9AE0054DF06 /* main.m */,
@@ -237,6 +255,8 @@
 				AC56CD821735E9AE0054DF06 /* Default@2x.png in Resources */,
 				AC56CD841735E9AE0054DF06 /* Default-568h@2x.png in Resources */,
 				AC56CD871735E9AE0054DF06 /* MainStoryboard.storyboard in Resources */,
+				AC56CDAF1735F3E20054DF06 /* summit.jpg in Resources */,
+				AC56CDB11735FE690054DF06 /* twitter.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
