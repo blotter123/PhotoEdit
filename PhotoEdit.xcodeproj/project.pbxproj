@@ -26,8 +26,8 @@
 		AC56CDA91735F1E00054DF06 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC56CDA81735F1E00054DF06 /* CoreImage.framework */; };
 		AC56CDAB1735F1E80054DF06 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC56CDAA1735F1E80054DF06 /* MessageUI.framework */; };
 		AC56CDAD1735F1FF0054DF06 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC56CDAC1735F1FF0054DF06 /* Social.framework */; };
-		AC56CDAF1735F3E20054DF06 /* summit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC56CDAE1735F3E20054DF06 /* summit.jpg */; };
-		AC56CDB11735FE690054DF06 /* twitter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC56CDB01735FE690054DF06 /* twitter.jpg */; };
+		AC56CDB31736B30F0054DF06 /* twitter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC56CDB21736B30F0054DF06 /* twitter.jpg */; };
+		AC56CDB51736B31C0054DF06 /* summit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC56CDB41736B31C0054DF06 /* summit.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +66,8 @@
 		AC56CDA81735F1E00054DF06 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		AC56CDAA1735F1E80054DF06 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		AC56CDAC1735F1FF0054DF06 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		AC56CDAE1735F3E20054DF06 /* summit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = summit.jpg; path = ../../Desktop/summit.jpg; sourceTree = "<group>"; };
-		AC56CDB01735FE690054DF06 /* twitter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = twitter.jpg; path = ../../Desktop/twitter.jpg; sourceTree = "<group>"; };
+		AC56CDB21736B30F0054DF06 /* twitter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twitter.jpg; sourceTree = "<group>"; };
+		AC56CDB41736B31C0054DF06 /* summit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = summit.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,8 +146,8 @@
 		AC56CD741735E9AE0054DF06 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AC56CDB01735FE690054DF06 /* twitter.jpg */,
-				AC56CDAE1735F3E20054DF06 /* summit.jpg */,
+				AC56CDB41736B31C0054DF06 /* summit.jpg */,
+				AC56CDB21736B30F0054DF06 /* twitter.jpg */,
 				AC56CD751735E9AE0054DF06 /* PhotoEdit-Info.plist */,
 				AC56CD761735E9AE0054DF06 /* InfoPlist.strings */,
 				AC56CD791735E9AE0054DF06 /* main.m */,
@@ -255,8 +255,8 @@
 				AC56CD821735E9AE0054DF06 /* Default@2x.png in Resources */,
 				AC56CD841735E9AE0054DF06 /* Default-568h@2x.png in Resources */,
 				AC56CD871735E9AE0054DF06 /* MainStoryboard.storyboard in Resources */,
-				AC56CDAF1735F3E20054DF06 /* summit.jpg in Resources */,
-				AC56CDB11735FE690054DF06 /* twitter.jpg in Resources */,
+				AC56CDB31736B30F0054DF06 /* twitter.jpg in Resources */,
+				AC56CDB51736B31C0054DF06 /* summit.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

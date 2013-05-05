@@ -144,23 +144,6 @@
         <image name="summit.jpg" width="2448" height="3264"/>
         <image name="twitter.jpg" width="250" height="250"/>
     </resources>
-    <classes>
-        <class className="BTLViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BTLViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="email:"/>
-                <relationship kind="action" name="filter1:"/>
-                <relationship kind="action" name="filter2:"/>
-                <relationship kind="action" name="filter3:"/>
-                <relationship kind="action" name="restoreImage:"/>
-                <relationship kind="action" name="tweet:"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
